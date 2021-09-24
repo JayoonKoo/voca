@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import UserName from './UserName';
 
 
 export default function Hello({age}) {
@@ -13,6 +14,7 @@ export default function Hello({age}) {
 	return (
 	<div>
 		<h2>{name}({propAge}): {msg}</h2>
+		<UserName name={name}/>
 		<button onClick={()=> {
 			changeName();
 			setAge(propAge + 1);
