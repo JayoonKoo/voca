@@ -1,0 +1,11 @@
+.day-list {
+	display: flex;
+	margin: 0 100px;
+	margin-bottom: 30px;
+}
+.day-list__day {
+	font-size: 18px;
+}
+.day-list__day + .day-list__day {
+	margin-left: 30px;
+}
