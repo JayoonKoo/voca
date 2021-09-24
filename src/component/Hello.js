@@ -1,20 +1,17 @@
-export default function Hello() {
-	function showName() {
-		console.log('koo');
-	}
+import {useState} from 'react'
 
-	function showAge(age) {
-		console.log(age);
+
+export default function Hello() {
+	const [name, setName] = useState('koo');
+
+	function changeName() {
+		setName(name === 'koo' ? 'jaYoon' : 'koo');
 	}
 
 	return (
 	<div>
-		<h1>Hello</h1>
-		<button onClick={showName}>ShowName</button>
-		<button onClick={()=> {showAge(30)}}>ShowAge</button>
-		<input onChange={(e)=> {
-			console.log(e.target.value);
-		}}></input>
+		<h2>{name}</h2>
+		<button onClick={changeName}>ShowName</button>
 	</div>
 	);
 }
