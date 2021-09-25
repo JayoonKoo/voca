@@ -1,15 +1,10 @@
 import styles from "../css/DayList.module.css";
 import {Link} from 'react-router-dom'
-import {useState, useEffect} from 'react'
+import useFecth from "../hooks/useFetch";
 
 export default function DataList() {
-	const [days, setDays] = useState([]);
-
-	useEffect(() => {
-		fetch('http://localhost:3001/days')
-			.then(res => res.json())
-			.then(days => setDays(days));
-	}, []);
+	const url = 'http://localhost:3001/days';
+	const days = useFecth(url);
 
   return (
     <>

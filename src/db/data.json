@@ -1,8 +1,17 @@
 {
   "days": [
-    { "id": 1, "day": 1 },
-    { "id": 2, "day": 2 },
-    { "id": 3, "day": 3 }
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    }
   ],
   "words": [
     {
@@ -10,13 +19,6 @@
       "day": 1,
       "eng": "book",
       "kor": "책",
-      "isDone": true
-    },
-    {
-      "id": 2,
-      "day": 1,
-      "eng": "dog",
-      "kor": "개",
       "isDone": false
     },
     {
@@ -24,27 +26,20 @@
       "day": 2,
       "eng": "car",
       "kor": "차",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 4,
       "day": 2,
       "eng": "pen",
       "kor": "팬",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 5,
       "day": 3,
       "eng": "school",
       "kor": "학교",
-      "isDone": false
-    },
-    {
-      "id": 6,
-      "day": 3,
-      "eng": "pencil",
-      "kor": "연필",
       "isDone": false
     }
   ]
