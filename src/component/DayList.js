@@ -1,9 +1,16 @@
-import data from "../db/data.json";
 import styles from "../css/DayList.module.css";
 import {Link} from 'react-router-dom'
+import {useState, useEffect} from 'react'
 
 export default function DataList() {
-  const { days } = data;
+	const [days, setDays] = useState([]);
+
+	useEffect(() => {
+		fetch('http://localhost:3001/days')
+			.then(res => res.json())
+			.then(days => setDays(days));
+	}, []);
+
   return (
     <>
       <ul className={styles["day-list"]}>
