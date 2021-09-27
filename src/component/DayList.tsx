@@ -2,7 +2,7 @@ import styles from "../css/DayList.module.css";
 import {Link} from 'react-router-dom'
 import useFecth from "../hooks/useFetch";
 
-interface IDay {
+export interface IDay {
 	id: number;
 	day: number;
 }

@@ -4,7 +4,7 @@ interface IProps {
 	word: IWord;
 }
 
-interface IWord {
+export interface IWord {
 	day: string;
 	eng: string;
 	kor: string;
