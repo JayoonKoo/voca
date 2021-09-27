@@ -1,12 +1,12 @@
 import {useParams} from 'react-router-dom';
 import styles from '../css/Day.module.css';
-import Word from './Word';
+import Word, { IWord } from './Word';
 import useFecth from '../hooks/useFetch';
 
 export default function Day() {
-	const {day} =  useParams();
+	const {day} =  useParams<{ day: string}>();
 	const url = `http://localhost:3001/words?day=${day}`;
-	const wordList = useFecth(url);
+	const wordList: IWord[] = useFecth(url);
 
 	return (
 		<>

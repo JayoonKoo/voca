@@ -2,9 +2,14 @@ import styles from "../css/DayList.module.css";
 import {Link} from 'react-router-dom'
 import useFecth from "../hooks/useFetch";
 
+export interface IDay {
+	id: number;
+	day: number;
+}
+
 export default function DataList() {
 	const url = 'http://localhost:3001/days';
-	const days = useFecth(url);
+	const days: IDay[] = useFecth(url);
 
 	if (days.length === 0) {
 		return <span>Loading...</span>;
