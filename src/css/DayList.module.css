@@ -1,0 +1,25 @@
+.day-list {
+	display: flex;
+	margin: 0 100px;
+	margin-bottom: 30px;
+}
+.day-list__day {
+	font-size: 18px;
+	background-color: lightcoral;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	width: 80px;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	transition: .4s;
+}
+.day-list__day > a {
+	display: block;
+}
+.day-list__day:hover {
+	background-color: lightsalmon;
+}
+.day-list__day + .day-list__day {
+	margin-left: 30px;
+}

@@ -1,0 +1,23 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 100px;
+	align-items: center;
+}
+
+.header__logo {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.header__menu {
+	display: flex;
+}
+
+.header__menu-item {
+	margin-left: 10px;
+}
+
+.header__menu-button {
+	padding: 10px 20px;
+}

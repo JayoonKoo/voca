@@ -1,0 +1,33 @@
+h2 {
+	margin: 0 100px;
+	margin-bottom: 30px;
+	font-size: 19px;
+	font-weight: 500;
+}
+table {
+	width: calc(100% - 200px);
+	margin: 0 100px;
+	background-color: #eee;
+}
+tbody {
+	border: 2px solid #333;
+}
+
+tr {
+	border-bottom: 1px solid #222;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+td {
+}
+.eng {
+	margin-left: 50px;
+}
+.kor {
+	margin-right: 50px;
+}
+
+
+
