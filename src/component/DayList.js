@@ -6,6 +6,10 @@ export default function DataList() {
 	const url = 'http://localhost:3001/days';
 	const days = useFecth(url);
 
+	if (days.length === 0) {
+		return <span>Loading...</span>;
+	}
+
   return (
     <>
       <ul className={styles["day-list"]}>
